@@ -1,3 +1,23 @@
+'''
+This project looks at a json file for Sarcasm Detection (can be found from Kaggle
+https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection
+The json file is also in the project under the data folder.
+
+Main Learning Outcomes:
+1. Using Tensorflow to preprocess text (ie. tokenize)
+2. splitting training and validation data
+3. generating sequences and using padding to fix sentence lengths.
+4. Building a Neural Network using Embedding and Convolutional neural Networks
+5. Visualize the performance of the model.
+
+Model Results:
+1. Decent validation accuracy of 85%
+2. Overfitting issue: the training data accuracy reached 100% while validation accuracy not improving.
+3. The loss is moving up and down. meaning that even when the accuracy is high,
+ The model is not very confident
+'''
+
+
 import tensorflow as tf
 import json
 import numpy as np
